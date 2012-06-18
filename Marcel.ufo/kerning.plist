@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+	<key>H</key>
+	<dict>
+	    <key>A</key>
+	    <integer>-170</integer>
+	    <key>O</key>
+	    <integer>-170</integer>
+	    <key>L</key>
+	    <integer>-160</integer>
+	    <key>H</key>
+	    <integer>-160</integer>
+	</dict>
+	<key>O</key>
+	<dict>
+	    <key>A</key>
+	    <integer>-173</integer>
+	    <key>O</key>
+	    <integer>-173</integer>
+	    <key>L</key>
+	    <integer>-173</integer>
+	    <key>H</key>
+	    <integer>-173</integer>
+	</dict>
+	<key>L</key>
+	<dict>
+	    <key>A</key>
+	    <integer>-285</integer>
+	    <key>O</key>
+	    <integer>-385</integer>
+	    <key>L</key>
+	    <integer>-175</integer>
+	    <key>H</key>
+	    <integer>-175</integer>
+	</dict>
+    </dict>
+</plist>

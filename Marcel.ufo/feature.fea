@@ -1,0 +1,121 @@
+
+# GPOS 
+
+
+lookup mark {
+  lookupflag 0;
+  markClass [\dotbelowcomb ] <anchor 498 -24> @dessous;
+  markClass [\acutecomb ] <anchor 493 718> @dessus;
+  markClass [\uni0302 ] <anchor 522 713> @dessus;
+  pos base [\A ] <anchor 308 714> mark @dessus;
+  pos base [\O ] <anchor 500 -1> mark @dessous
+	<anchor 524 716> mark @dessus;
+  pos base [\A ] <anchor 308 714> mark @dessus;
+  pos base [\L ] <anchor 522 717> mark @dessus;
+  pos base [\U ] <anchor 522 717> mark @dessus;
+  pos base [\acutecomb ] <anchor 493 718> mark @dessus;
+  pos base [\I ] <anchor 239 715> mark @dessus;
+  pos base [\dotbelowcomb ] <anchor 498 -24> mark @dessous;
+  pos base [\uni1ECC ] <anchor 516 717> mark @dessus;
+  pos base [\uni1ECC ] <anchor 524 -25> mark @dessous
+	<anchor 524 716> mark @dessus;
+  pos base [\uni0302 ] <anchor 522 713> mark @dessus;
+  pos base [\Q ] <anchor 524 741> mark @dessus
+	<anchor 500 -42> mark @dessous;
+  pos base [\C ] <anchor 500 -41> mark @dessous
+	<anchor 524 739> mark @dessus;
+  pos base [\D ] <anchor 807 -20> mark @dessous
+	<anchor 831 716> mark @dessus;
+  pos base [\G ] <anchor 503 -28> mark @dessous
+	<anchor 527 753> mark @dessus;
+  pos base [\B ] <anchor 807 -20> mark @dessous
+	<anchor 831 716> mark @dessus;
+  pos base [\P ] <anchor 807 710> mark @dessous
+	<anchor 831 -26> mark @dessus;
+  pos base [\R ] <anchor 807 710> mark @dessous
+	<anchor 871 -26> mark @dessus;
+  pos base [\S ] <anchor 474 -0> mark @dessous
+	<anchor 474 0> mark @dessus;
+  pos base [\J ] <anchor 503 -7> mark @dessous;
+  pos base [\T ] <anchor 505 714> mark @dessus;
+  pos base [\zero ] <anchor 496 -20> mark @dessous
+	<anchor 520 716> mark @dessus;
+  pos base [\one ] <anchor 789 148> mark @dessus;
+  pos base [\three ] <anchor 807 -20> mark @dessous
+	<anchor 831 716> mark @dessus;
+  pos base [\five ] <anchor 807 -20> mark @dessous
+	<anchor 831 716> mark @dessus;
+  pos base [\nine ] <anchor 1233 710> mark @dessous
+	<anchor 1257 -26> mark @dessus;
+  pos base [\four ] <anchor 505 714> mark @dessus;
+  pos base [\eight ] <anchor 474 -0> mark @dessous
+	<anchor 474 0> mark @dessus;
+  pos base [\six ] <anchor 1233 710> mark @dessous
+	<anchor 1257 -26> mark @dessus;
+  pos base [\two ] <anchor 1233 710> mark @dessous
+	<anchor 1257 -26> mark @dessus;
+  pos base [\a ] <anchor 979 -0> mark @dessous
+	<anchor 991 3> mark @dessus;
+  pos base [\o ] <anchor 979 -0> mark @dessous
+	<anchor 991 3> mark @dessus;
+  pos base [\i ] <anchor 240 491> mark @dessus;
+  pos base [\c ] <anchor 979 -0> mark @dessous
+	<anchor 991 3> mark @dessus;
+  pos base [\b ] <anchor 26 -0> mark @dessous
+	<anchor 14 3> mark @dessus;
+  pos base [\e ] <anchor 979 -0> mark @dessous
+	<anchor 991 3> mark @dessus;
+  pos base [\n ] <anchor 1241 -0> mark @dessous
+	<anchor 1253 3> mark @dessus;
+  pos base [\m ] <anchor 1213 -0> mark @dessous
+	<anchor 1224 3> mark @dessus;
+  pos base [\h ] <anchor 1241 -0> mark @dessous
+	<anchor 1253 3> mark @dessus;
+  pos base [\u ] <anchor 1229 -0> mark @dessous
+	<anchor 1240 3> mark @dessus;
+  pos base [\p ] <anchor -12 -0> mark @dessous
+	<anchor -24 3> mark @dessus;
+  pos base [\q ] <anchor 472 -0> mark @dessous
+	<anchor 460 3> mark @dessus;
+  pos base [\s ] <anchor 394 1> mark @dessous
+	<anchor 394 1> mark @dessus;
+  pos base [\g ] <anchor 404 -234> mark @dessous
+	<anchor 920 -17> mark @dessus;
+  pos base [\f ] <anchor 1229 -0> mark @dessous
+	<anchor 1240 3> mark @dessus;
+  pos base [\j ] <anchor -25 -205> mark @dessous
+	<anchor 240 491> mark @dessus;
+  pos base [\r ] <anchor 1241 -0> mark @dessous
+	<anchor 1253 3> mark @dessus;
+  pos base [\t ] <anchor 805 -485> mark @dessous
+	<anchor 802 -496> mark @dessus;
+  pos base [\exclam ] <anchor 239 715> mark @dessus;
+} mark;
+
+feature \mark {
+
+  script DFLT;
+     language dflt ;
+      lookup mark;
+
+  script latn;
+     language dflt ;
+      lookup mark;
+     language YBA  exclude_dflt;
+      lookup mark;
+} \mark;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\A \H \O \A \L \V \U \space \acute \Oacute \Uacute \I \Iacute \Lacute 
+	\uni1ECC \uni1ECC \uni1ED8 \Icircumflex \Q \E \F \C \D \G \w \M \z \N \W \X \Y \B \P \R \K \S 
+	\J \T \Z \zero \one \three \five \seven \nine \four \eight \six \v \two \a \o \l \i \c \b \d 
+	\e \n \m \h \u \p \q \x \y \k \s \g \f \j \r \t \period \exclam \guillemotleft ];
+@GDEF_Ligature = [];
+@GDEF_Mark = [\acutecomb \dotbelowcomb \uni0302 ];
+@GDEF_Component = [];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple @GDEF_Ligature @GDEF_Mark @GDEF_Component;
+
+} GDEF;
+

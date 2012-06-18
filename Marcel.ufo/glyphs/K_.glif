@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="K" format="1">
+  <advance width="1000"/>
+  <unicode hex="004b"/>
+  <outline>
+    <contour>
+      <point x="417.73" y="341" type="curve" smooth="no"/>
+      <point x="799.792" y="690" type="line" smooth="no"/>
+      <point x="647.792" y="690" type="line" smooth="no"/>
+      <point x="374" y="396.797" type="line" smooth="no"/>
+      <point x="374" y="687.218" type="line" smooth="no"/>
+      <point x="232" y="687.218" type="line" smooth="no"/>
+      <point x="232" y="-0.000976562" type="line" smooth="no"/>
+      <point x="374" y="-0.000976562" type="line" smooth="no"/>
+      <point x="374" y="295.985" type="line" smooth="no"/>
+      <point x="647.792" y="2.78223" type="line" smooth="no"/>
+      <point x="799.792" y="2.78223" type="line" smooth="no"/>
+      <point x="801" y="1"/>
+      <point x="411.328" y="344"/>
+    </contour>
+  </outline>
+</glyph>
